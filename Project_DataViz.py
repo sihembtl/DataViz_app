@@ -2,9 +2,7 @@
 
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
 import numpy as np
-import seaborn as sns
 from numerize.numerize import numerize
 
 import plotly.graph_objs as go
@@ -27,7 +25,7 @@ df_apres_nettoyage = df[df['PRIMENETTE'] > 0]
 header_left,header_mid,header_right = st.columns([1,2,1],gap='large')
 
 with header_mid:
-    st.title('Tableau de bord agences')
+    st.title(':bar_chart: Tableau de bord agences')
 
 
 with st.sidebar:
